@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+/* Tenada */
+@font-face{
+	font-family: "Tenada";
+	font-style: normal;
+	font-weight: normal;
+	src: url(font/Tenada.woff2) format("woff2"),
+         url(font/Tenada.ttf.woff) format('woff'),
+         url(font/Tenada.ttf.ttf) format('ttf');
+}
+
+
+/* Esamanru */
+@font-face {
+    font-family: 'Esamanru';
+    font-weight: 300;
+    font-style: normal;
+    src: url(font/esamanru-Light.woff2) format('woff2'),
+         url(font/esamanru-Light.woff) format('woff'),
+         url(font/esamanru-Light.ttf) format('ttf');
+}
+@font-face {
+    font-family: 'Esamanru';
+    font-weight: 400;
+    font-style: normal;
+    src: url(font/esamanru-Medium.woff2) format('woff2'),
+         url(font/esamanru-Medium.woff) format('woff'),
+         url(font/esamanru-Medium.ttf) format('ttf');
+}
+@font-face {
+    font-family: 'Esamanru';
+    font-weight: 700;
+    font-style: normal;
+    src: url(font/esamanru-Bold.woff2) format('woff2'),
+         url(font/esamanru-Bold.woff) format('woff'),
+         url(font/esamanru-Bold.ttf) format('ttf');
+}
