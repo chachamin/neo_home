@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+/* 공통 */
+.sec_tit_wrap .sec_tit {font-size: 2.5rem;}
+.sec_tit_wrap .tit_s {font-size: 1.25rem;}
+
+/* main visual */
+.main_sec01 .visual_wrap {width: 100%;height: 946px;overflow: hidden;}
+.main_v_sd .item {width: 100%;height: 100%;}
+.main_v_sd .item .text_box {color: #fff;}
+.main_v_sd .item .text_box .cont {font-size:1.125rem}
+
+/* main_sec02 */
+.main_sec02 .sec_tit_wrap {text-align: center;}
+
