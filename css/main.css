@@ -12,4 +12,9 @@
 
 /* main_sec02 */
 .main_sec02 .sec_tit_wrap {text-align: center;}
-
+.bus_list {display: flex;margin: 0 -16px;}
+.bus_list .list_item {width: 20%;}
+.bus_list .list_item a {padding: 0 16px;transform: skewY;}
+.bus_list .list_item .bus_tit {font-size: 1.438rem;position: relative;}
+.bus_list .list_item .bus_tit::after {content: '';display: block;width: 100%;height: 1px;background: #fff;}
+.bus_list .list_item .cont li {font-size: 1.125rem;}
