@@ -255,9 +255,11 @@ ul.ulfl > li{float:left}
 .blue{color:#2259D5 !important;}
 .blue_l{color:#003981 !important;}
 .orange{color:#EE5B00 !important}
+.orange_l{color:#ff4800 !important}
 .red{color:#D23834 !important}
 .red_l{color:#FB001E !important}
 .bk{color:#111 !important}
+.black_l{color: #2d2d2d;}
 
 
 /* 배경 */

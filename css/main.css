@@ -1,6 +1,8 @@
 @charset "utf-8";
 
 /* 공통 */
+.main_sec {position: relative;}
+.main_sec:not(.main_sec05):after {content: '';display: block;width: 100%;height: 100%;position: absolute;top: 0;left: 0;background: #f6faff;z-index: -2;}
 .sec_tit_wrap .sec_tit {font-size: 2.5rem;}
 .sec_tit_wrap .sec_tit span {position: relative;}
 .sec_tit_wrap .sec_tit span::after {content: '';display: block;width: 20px;height: 20px;border-radius:50%;position: absolute;top: 0;right: -10px;background-color: #bcd9ff;z-index: -1;}
@@ -10,11 +12,14 @@
 /* main visual */
 .main_sec01 .visual_wrap {width: 100%;height: 946px;overflow: hidden;}
 .main_v_sd .item {width: 100%;height: 100%;}
-.main_v_sd .item .text_box {color: #fff;}
+.main_v_sd .item .text_box {color: #fff;padding-top: 500px;}
 .main_v_sd .item .text_box .cont {font-size:1.125rem}
+.main_v_sd .item01 .text_box .sd_tit {font-size: 3.75rem;}
+
+
 
 /* main_sec02 */
-.main_sec02 {padding:120px 0 20px;margin-bottom: 120px;}
+.main_sec02 {padding:120px 0 140px;}
 .main_sec02 .sec_tit_wrap {text-align: center;}
 .bus_list {display: flex;margin: 0 -16px;}
 .bus_list .list_item {width: 20%;height: 400px;padding: 0 16px;}
@@ -70,10 +75,33 @@
 .main_sec04 .board_tabs .tab_sd .cont {margin: 1rem 0 2rem;min-height: 39px;}
 .main_sec04 .board_tabs .tab_sd .date {font-size: 0.875rem;color: #979797;}
 .main_sec04 .board_tabs .tab_sd .new {width: 20px;height: 20px;text-align: center;color: red;border:2px solid red;border-radius: 50%;font-size: 0.75rem;font-weight: 400;line-height: 19px;position: absolute;top: 10px;right: 10px;}
-.main_sec04 .right_area {padding: 50px 0 50px 50px;width: 35%;}
+.main_sec04 .right_area {padding: 50px 0 39px 50px;width: 35%;}
 .main_sec04 .right_area .tit_box {margin-top: 17px;background: #ffd451;font-size: 1.438rem;display: flex;align-items: center;padding: 20px 30px 15px;}
 .main_sec04 .right_area .contact_info {margin-top: 30px;}
-.main_sec04 .right_area .contact_info ul > li {display: flex;height: 55px;align-items: center;}
+.main_sec04 .right_area .contact_info ul > li {display: flex;padding:15px 0; align-items: center;}
 .main_sec04 .right_area .contact_info ul > li:nth-child(2) {border-top: 1px solid #ddd;border-bottom: 1px solid #ddd;}
+.main_sec04 .right_area .contact_info ul > li:nth-child(3) {align-items: baseline;}
 .main_sec04 .right_area .contact_info .info_tit {width: 90px;font-weight: 400;}
+.main_sec04 .right_area .contact_info .info_cont {width: calc(100% - 90px);}
 
+/* main_sec05 */
+.main_sec05 {padding: 120px 0 60px;text-align: center;}
+.cnp_loop_wrap {overflow: hidden;position: relative;width: 100%;height: 95px;box-sizing: border-box;margin-top: 30px;}
+.loop_box {width: 4125px;display: flex;height: 100%;flex-wrap: nowrap;animation: bannermove 40s linear infinite;}
+.loop_box > div {margin: 0 -1px 0 0;width: 275px;}
+.loop_box .item a {width: 100%;height: 100%;display: inline-flex;align-items: center;background-color: gold;}
+
+/* aside */
+.aside {background: #fafafa;}
+.aside ul > li {display: flex;align-items: center;font-size: 0.875rem;font-weight: 300;}
+
+
+
+@keyframes bannermove {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-50%, 0);
+    }
+}
