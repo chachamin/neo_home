@@ -1,4 +1,19 @@
 $(document).ready(function(){
+	// main_v_sd
+	$('.main_v_sd').slick({
+		autoplay: false,
+		dots: true,
+		pauseOnDotsHover: false,
+		pauseOnHover: false,
+		speed: 600,
+		arrows: false,
+		autoplaySpeed: 4000,
+		fade: false,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		infinite: true,
+		cssEase: 'linear'
+	});
     $('.work_sd').slick({
 		autoplay: true,
 		dots: true,
@@ -66,5 +81,18 @@ $(document).ready(function(){
 			}
 		  ]
 
+	});
+
+	// fixed header(pc)
+	$(window).scroll(function() {
+		if($(window).width() > 0) {
+			var scroll = $(window).scrollTop();
+			if (scroll >= 70) {
+				$("#header").addClass("fixed");
+
+			} else {
+				$("#header").removeClass("fixed");	
+			}
+		}
 	});
 });

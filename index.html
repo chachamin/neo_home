@@ -19,7 +19,7 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/slick.js"></script>
-    <script src="js/common.js"></script>
+    <!-- <script src="js/common.js"></script> -->
     <script src="js/main.js"></script>
 
     <link rel="stylesheet" type="text/css" href="css/main.css" />
@@ -34,132 +34,148 @@
     </div>
 
     <div class="wrapper">
-        <header id="header">
-            <div class="gnb_wrap">
-                <div class="inner">
+        <header id="header" class="main_header">
+            <!-- 서브헤더  -->
+            <div class="gnb_area">
+                <div class="logo_wp p_r">
                     <h1 class="logo_box">
-                        <a href="#none">
-                            <div>
-                                <img alt="NEO New E-information Organization">
+                        <a href="/index.do?S=S01">
+                            <div class="symbol">
+                                <span class="sound_only">NEO New E-information Organization</span>
                             </div>
                         </a>
                     </h1>
                 </div>
-                <div id="gnb">
-                    <h2 id="gnbSopt" class="sound_only">네오 홈페이지 주요메뉴</h2>
-                    <ul class="top1menu">
-                        <li class="depth1">
-							<a href="#none">About</a>
-						</li>
-                        <li class="depth1">
-							<a href="#none">Portfolio</a>
-						</li>
-                        <li class="depth1">
-							<a href="#none">Business</a>
-						</li>
-                        <li class="depth1">
-							<a href="#none">Solution</a>
-						</li>
-                        <li class="depth1">
-							<a href="#none">Community</a>
-						</li>
-                    </ul>
-                </div>
-                <div class="inner">
-                    <div class="gnb_r">
-                        <ul class="ext_menu">
-                            <li><a href="#" class="help_desk ir_pm">네오헬프데스크</a></li>
-                            <li><a href="#" class="ir_pm log_in">로그인</a></li>
-                            <li><a href="#" class="ir_pm site_map">사이트맵</a></li>
+                <!-- end : logo_box -->
+                <div class="header_wrap">
+                    <nav id="gnb">
+                        <ul id="head_menu" class="topmenu gnb_dep1">
+                            <li class="lnb1 mnfirst"><a href="#none">About</a></li>
+                            <li class="lnb2"><a href="#none">Portfolio</a></li>
+                            <li class="lnb3"><a href="#none">Business</a></li>
+                            <li class="lnb4"><a href="#none">Solution</a></li>
+                            <li class="lnb5 mnlast"><a href="#none">Community</a></li>
                         </ul>
+                    </nav>
+
+                    <div class="gnb_r_wp p_r">
+                        <ul class="gnb_r">
+                            <li><a href="#" class="help_desk" target="_blank" title="헬프데스크 바로가기">H</a></li>
+                            <li>
+                                <a href="#" class="log_in" title="로그인">
+                                    <span class="sound_only">로그인</span><span class="ico_ir"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="log_out" title="로그아웃">
+                                    <span class="sound_only">로그아웃</span><span class="ico_ir"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="site_map" title="사이트맵">
+                                    <span class="sound_only">사이트맵</span><span class="ico_ir"></span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- end : gnb_r -->
                     </div>
+
                 </div>
-            </div>
-            <a href="#none" id="mMenu" title="모바일 메뉴 열기">
-                <span></span>
-                <span></span>
-                <span></span>
-            </a>
-            <div id="mGnb">
-                <div class="mgnb_top">
-                    <div class="t_abox">
-                        <a href="#">Home</a>
-                        <a href="#">Help desk</a>
-                        <a href="#">Login</a>
-                        <a href="#">Sitemap</a>
-                    </div>
-                    <div class="t_box">
-                        <p>NEO</p>
-                        <p>홈페이지 방문을 환영합니다.</p>
-                    </div>
+
+                <div class="mgnb_wp">
+                    <a href="#none" id="mMenu" title="모바일 메뉴 열기">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                    <nav id="mGnb">
+
+                        <div class="mgnb_top">
+                            <div class="t_abox">
+                                <div class="ta_l">
+                                    <span class="fb3">전체메뉴</span>
+                                </div>
+                                <div class="ta_r">
+                                    <a href="#" class="help_desk ir_pm" target="_blank">헬프데스크</a>
+                                    <a href="#" class="ir_pm log_in">로그인</a>
+                                    <a href="#" class="ir_pm site_map">사이트맵</a>
+                                </div>
+                            </div>
+                            <div class="t_box">
+                                <div class="in_box">
+                                    <div class="ico"></div>
+                                    <p>NEO<br>홈페이지 방문을 환영합니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <ul id="head_menu" class="mDepth1">
+                            <li class="lnb1 mnfirst">
+                                <a href="#none" class="active">About</a>
+                                <ul class="mDepth2">
+                                    <li class="sub01 subfirst"><a href="#none">NEO</a></li>
+                                    <li class="sub02"><a href="#none">Vision</a></li>
+                                    <li class="sub03"><a href="#none">Directions</a></li>
+                                </ul>
+                            </li>
+                            <li class="lnb2">
+                                <a href="#none">Portfolio</a>
+                            </li>
+                            <li class="lnb3">
+                                <a href="#none">Business</a>
+                                <ul class="mDepth2">
+                                    <li class="sub01 subfirst"><a href="#none">Website</a></li>
+                                    <li class="sub02"><a href="#none">Research & Dev</a></li>
+                                    <li class="sub03"><a href="#none">Consulting Service</a></li>
+                                    <li class="sub04"><a href="#none">System Integration</a></li>
+                                </ul>
+                            </li>
+                            <li class="lnb4">
+                                <a href="#none">Solution</a>
+                                <ul class="mDepth2">
+                                    <li class="sub01 subfirst"><a href="#none">CMS</a></li>
+                                    <li class="sub02"><a href="#none">IR-CMS</a></li>
+                                    <li class="sub03"><a href="#none">Security Solutions</a></li>
+                                </ul>
+                            </li>
+                            <li class="lnb5">
+                                <a href="#none">Community</a>
+                                <ul class="mDepth2">
+                                    <li class="sub01 subfirst"><a href="#none">Notice</a></li>
+                                    <li class="sub02"><a href="#none">Contact</a></li>
+                                    <li class="sub03 sublast"><a href="#none">reference</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a href="javascript:mGnbClose();" class="mGnbClose"><span class="mn_close"></span>모바일 메뉴 닫기</a>
+                    </nav>
                 </div>
-                <ul class="mDepth1">
-                    <li>
-                        <a href="#">About</a>
-                        <ul class="mDepth2">
-                            <li><a href="#none">NEO</a></li>
-                            <li><a href="#none">Vision</a></li>
-                            <li><a href="#none">Directions</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#">Business</a>
-                        <ul class="mDepth2">
-                            <li><a href="#none">web</a></li>
-                            <li><a href="#none">Research & Dev</a></li>
-                            <li><a href="#none">Consulting Service</a></li>
-                            <li><a href="#none">System Integration</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Solution</a>
-                        <ul class="mDepth2">
-                            <li><a href="#none">CMS</a></li>
-                            <li><a href="#none">IR-CMS</a></li>
-                            <li><a href="#none">Security Solution</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#none">Community</a>
-                        <ul class="mDepth2">
-                            <li><a href="#none">notice</a></li>
-                            <li><a href="#none">Quotation inquiry</a></li>
-                            <li><a href="#none">reference</a></li>
-                            <li><a href="#none">Help desk</a></li>
-                        </ul>
-                    </li>
-                </ul>
             </div>
         </header>
-
 
         <div id="container">
             <div id="main">
                 <section class="main_sec main_sec01">
-                    <div class="visual_wrap">
+                    <div class="main_vsual_wp">
                         <div class="main_v_sd">
-                            <div class="item item01">
+                            <div class="item item01 mvs_hstour">
                                 <div class="bg"></div>
                                 <div class="inner">
                                     <div class="text_box">
                                         <div class="tit">
                                             <p class="sd_tit">화순문화관광</p>
-                                            <p class="sub_tit">자연愛서 즐기는 행복 힐링</p>
-                                            <p class="cont">화순군 문화관광 반응형 웹사이트</p>
+                                            <p class="heading_5 mt30">자연愛서 즐기는 행복 힐링</p>
+                                            <p class="cont mt8">화순군 문화관광 반응형 웹사이트</p>
                                         </div>
-                                        <div class="btn">
-                                            <a href="#">
-                                                View details
-                                                <img>
+                                        <div class="btn_box">
+                                            <a href="#" class="btn">
+                                                <span>View details</span>
+                                                <span class="ico"></span>
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="item item02">
+                            <div class="item item02 mvs_hslib">
                                 <div class="bg"></div>
                                 <div class="text_box">
                                     <div class="tit">
@@ -176,7 +192,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="item item03">
+                            <div class="item item03 mvs_forest">
                                 <div class="bg"></div>
                                 <div class="text_box">
                                     <div class="tit">
@@ -194,7 +210,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="item item04">
+                            <div class="item item04 mvs_hjhjj">
                                 <div class="bg"></div>
                                 <div class="text_box">
                                     <div class="tit">
@@ -213,6 +229,20 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="slick-controls">
+							<div class="slick-nav">
+								<a href="javascript:void(0)" class="slick-prev" title="이전">prev</a>
+								<a href="javascript:void(0)" class="slick-next" title="다음">next</a>
+							</div>
+						</div>
+						<!-- end : slick-controls -->
+						<div class="slick-controls inner">
+							<div class="slick-nav">
+								<a href="javascript:void(0)" class="slick-stop" title="멈춤">멈춤</a>
+								<a href="javascript:void(0)" class="slick-play" title="재생">재생</a>
+							</div>
+						</div>
+						<!-- end : slick-controls -->
                     </div>
                 </section>
                 <section class="main_sec main_sec02">
@@ -404,7 +434,8 @@
                                                 <a href="#" class="in_box">
                                                     <div class="new">N</div>
                                                     <div class="tit">점검안내</div>
-                                                    <div class="cont">네트워크 정기 점검 및 시스템 장애로 인한 수시 점검에 따른 헬프데스크 및 웹 호스팅 서비스 중단 안내입니다.</div>
+                                                    <div class="cont">네트워크 정기 점검 및 시스템 장애로 인한 수시 점검에 따른 헬프데스크 및 웹 호스팅
+                                                        서비스 중단 안내입니다.</div>
                                                     <div class="date">2020-10-27</div>
                                                 </a>
                                             </div>
@@ -412,35 +443,40 @@
                                                 <a href="#" class="in_box">
                                                     <div class="new">N</div>
                                                     <div class="tit">헬프데스크 및 웹 호스팅 서비스 중단 안내!</div>
-                                                    <div class="cont">네트워크 정기 점검 및 시스템 장애로 인한 수시 점검에 따른 헬프데스크 및 웹 호스팅 서비스 중단 안내입니다.</div>
+                                                    <div class="cont">네트워크 정기 점검 및 시스템 장애로 인한 수시 점검에 따른 헬프데스크 및 웹 호스팅
+                                                        서비스 중단 안내입니다.</div>
                                                     <div class="date">2020-10-27</div>
                                                 </a>
                                             </div>
                                             <div class="item">
                                                 <a href="#" class="in_box">
                                                     <div class="tit">헬프데스크 및 웹 호스팅 서비스 중단 안내!</div>
-                                                    <div class="cont">네트워크 정기 점검 및 시스템 장애로 인한 수시 점검에 따른 헬프데스크 및 웹 호스팅 서비스 중단 안내입니다.</div>
+                                                    <div class="cont">네트워크 정기 점검 및 시스템 장애로 인한 수시 점검에 따른 헬프데스크 및 웹 호스팅
+                                                        서비스 중단 안내입니다.</div>
                                                     <div class="date">2020-10-27</div>
                                                 </a>
                                             </div>
                                             <div class="item">
                                                 <a href="#" class="in_box">
                                                     <div class="tit">헬프데스크 및 웹 호스팅 서비스 중단 안내!</div>
-                                                    <div class="cont">네트워크 정기 점검 및 시스템 장애로 인한 수시 점검에 따른 헬프데스크 및 웹 호스팅 서비스 중단 안내입니다.</div>
+                                                    <div class="cont">네트워크 정기 점검 및 시스템 장애로 인한 수시 점검에 따른 헬프데스크 및 웹 호스팅
+                                                        서비스 중단 안내입니다.</div>
                                                     <div class="date">2020-10-27</div>
                                                 </a>
                                             </div>
                                             <div class="item">
                                                 <a href="#" class="in_box">
                                                     <div class="tit">헬프데스크 및 웹 호스팅 서비스 중단 안내!</div>
-                                                    <div class="cont">네트워크 정기 점검 및 시스템 장애로 인한 수시 점검에 따른 헬프데스크 및 웹 호스팅 서비스 중단 안내입니다.</div>
+                                                    <div class="cont">네트워크 정기 점검 및 시스템 장애로 인한 수시 점검에 따른 헬프데스크 및 웹 호스팅
+                                                        서비스 중단 안내입니다.</div>
                                                     <div class="date">2020-10-27</div>
                                                 </a>
                                             </div>
                                             <div class="item">
                                                 <a href="#" class="in_box">
                                                     <div class="tit">헬프데스크 및 웹 호스팅 서비스 중단 안내!</div>
-                                                    <div class="cont">네트워크 정기 점검 및 시스템 장애로 인한 수시 점검에 따른 헬프데스크 및 웹 호스팅 서비스 중단 안내입니다.</div>
+                                                    <div class="cont">네트워크 정기 점검 및 시스템 장애로 인한 수시 점검에 따른 헬프데스크 및 웹 호스팅
+                                                        서비스 중단 안내입니다.</div>
                                                     <div class="date">2020-10-27</div>
                                                 </a>
                                             </div>
@@ -456,42 +492,48 @@
                                                 <a href="#" class="in_box">
                                                     <div class="new">N</div>
                                                     <div class="tit">헬프데스크 및 웹 호스팅 서비스 중단 안내!</div>
-                                                    <div class="cont">네트워크 정기 점검 및 시스템 장애로 인한 수시 점검에 따른 헬프데스크 및 웹 호스팅 서비스 중단 안내입니다.</div>
+                                                    <div class="cont">네트워크 정기 점검 및 시스템 장애로 인한 수시 점검에 따른 헬프데스크 및 웹 호스팅
+                                                        서비스 중단 안내입니다.</div>
                                                     <div class="date">2020-10-27</div>
                                                 </a>
                                             </div>
                                             <div class="item">
                                                 <a href="#" class="in_box">
                                                     <div class="tit">헬프데스크 및 웹 호스팅 서비스 중단 안내!</div>
-                                                    <div class="cont">네트워크 정기 점검 및 시스템 장애로 인한 수시 점검에 따른 헬프데스크 및 웹 호스팅 서비스 중단 안내입니다.</div>
+                                                    <div class="cont">네트워크 정기 점검 및 시스템 장애로 인한 수시 점검에 따른 헬프데스크 및 웹 호스팅
+                                                        서비스 중단 안내입니다.</div>
                                                     <div class="date">2020-10-27</div>
                                                 </a>
                                             </div>
                                             <div class="item">
                                                 <a href="#" class="in_box">
                                                     <div class="tit">헬프데스크 및 웹 호스팅 서비스 중단 안내!</div>
-                                                    <div class="cont">네트워크 정기 점검 및 시스템 장애로 인한 수시 점검에 따른 헬프데스크 및 웹 호스팅 서비스 중단 안내입니다.</div>
+                                                    <div class="cont">네트워크 정기 점검 및 시스템 장애로 인한 수시 점검에 따른 헬프데스크 및 웹 호스팅
+                                                        서비스 중단 안내입니다.</div>
                                                     <div class="date">2020-10-27</div>
                                                 </a>
                                             </div>
                                             <div class="item">
                                                 <a href="#" class="in_box">
                                                     <div class="tit">헬프데스크 및 웹 호스팅 서비스 중단 안내!</div>
-                                                    <div class="cont">네트워크 정기 점검 및 시스템 장애로 인한 수시 점검에 따른 헬프데스크 및 웹 호스팅 서비스 중단 안내입니다.</div>
+                                                    <div class="cont">네트워크 정기 점검 및 시스템 장애로 인한 수시 점검에 따른 헬프데스크 및 웹 호스팅
+                                                        서비스 중단 안내입니다.</div>
                                                     <div class="date">2020-10-27</div>
                                                 </a>
                                             </div>
                                             <div class="item">
                                                 <a href="#" class="in_box">
                                                     <div class="tit">헬프데스크 및 웹 호스팅 서비스 중단 안내!</div>
-                                                    <div class="cont">네트워크 정기 점검 및 시스템 장애로 인한 수시 점검에 따른 헬프데스크 및 웹 호스팅 서비스 중단 안내입니다.</div>
+                                                    <div class="cont">네트워크 정기 점검 및 시스템 장애로 인한 수시 점검에 따른 헬프데스크 및 웹 호스팅
+                                                        서비스 중단 안내입니다.</div>
                                                     <div class="date">2020-10-27</div>
                                                 </a>
                                             </div>
                                             <div class="item">
                                                 <a href="#" class="in_box">
                                                     <div class="tit">헬프데스크 및 웹 호스팅 서비스 중단 안내!</div>
-                                                    <div class="cont">네트워크 정기 점검 및 시스템 장애로 인한 수시 점검에 따른 헬프데스크 및 웹 호스팅 서비스 중단 안내입니다.</div>
+                                                    <div class="cont">네트워크 정기 점검 및 시스템 장애로 인한 수시 점검에 따른 헬프데스크 및 웹 호스팅
+                                                        서비스 중단 안내입니다.</div>
                                                     <div class="date">2020-10-27</div>
                                                 </a>
                                             </div>

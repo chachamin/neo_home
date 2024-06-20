@@ -117,8 +117,8 @@
     display: none;
 }
 
-.slick-dots li{display:inline-block;font-size:0;color: transparent;}
-/* .slick-dots{text-align:center;} */
-/* .slick-dots button{padding:0;width:16px;height:16px;border-radius:50%;margin:0 2px;border:.0;background:rgba(255,255,255,.2);transition:all .5s ease-in-out;}
+.slick-dots li{display:inline-block;font-size:0;}
+.slick-dots{text-align:center;}
+.slick-dots button{padding:0;width:16px;height:16px;border-radius:50%;margin:0 2px;border:.0;background:rgba(255,255,255,.2);transition:all .5s ease-in-out;}
 .slick-dots button:hover, .slick-dots button:focus{border:4px solid rgba(255,255,255,.8);background:transparent;}
-.slick-dots .slick-active button{width:18px;height:18px;background:transparent;border:4px solid #fff;} */
+.slick-dots .slick-active button{width:18px;height:18px;background:transparent;border:4px solid #fff;}
