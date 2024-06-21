@@ -34,131 +34,148 @@
     </div>
 
     <div class="wrapper">
-        <header id="header">
-            <div class="gnb_wrap">
-                <div class="inner">
+        <header id="header" class="">
+            <!-- 서브헤더  -->
+            <div class="gnb_area">
+                <div class="logo_wp p_r">
                     <h1 class="logo_box">
-                        <a href="#none">
-                            <div>
-                                <img alt="NEO New E-information Organization">
+                        <a href="/index.do?S=S01">
+                            <div class="symbol">
+                                <span class="sound_only">NEO New E-information Organization</span>
                             </div>
                         </a>
                     </h1>
                 </div>
-                <div id="gnb">
-                    <h2 id="gnbSopt" class="sound_only">네오 홈페이지 주요메뉴</h2>
-                    <ul class="top1menu">
-                        <li class="depth1">
-							<a href="#none">About</a>
-						</li>
-                        <li class="depth1">
-							<a href="#none">Portfolio</a>
-						</li>
-                        <li class="depth1">
-							<a href="#none">Business</a>
-						</li>
-                        <li class="depth1">
-							<a href="#none">Solution</a>
-						</li>
-                        <li class="depth1">
-							<a href="#none">Community</a>
-						</li>
-                    </ul>
-                </div>
-                <div class="inner">
-                    <div class="gnb_r">
-                        <ul class="ext_menu">
-                            <li><a href="#" class="help_desk ir_pm">네오헬프데스크</a></li>
-                            <li><a href="#" class="ir_pm log_in">로그인</a></li>
-                            <li><a href="#" class="ir_pm site_map">사이트맵</a></li>
+                <!-- end : logo_box -->
+                <div class="header_wrap">
+                    <nav id="gnb">
+                        <ul id="head_menu" class="topmenu gnb_dep1">
+                            <li class="lnb1 mnfirst"><a href="#none" class="active">About</a></li>
+                            <li class="lnb2"><a href="#none">Portfolio</a></li>
+                            <li class="lnb3"><a href="#none">Business</a></li>
+                            <li class="lnb4"><a href="#none">Solution</a></li>
+                            <li class="lnb5 mnlast"><a href="#none">Community</a></li>
                         </ul>
+                    </nav>
+
+                    <div class="gnb_r_wp p_r">
+                        <ul class="gnb_r">
+                            <li><a href="#" class="help_desk" target="_blank" title="헬프데스크">H</a></li>
+                            <li>
+                                <a href="#" class="log_in" title="로그인">
+                                    <span class="sound_only">로그인</span><span class="ico_ir"></span>
+                                </a>
+                            </li>
+                            <!-- <li>
+                                <a href="#" class="log_out" title="로그아웃">
+                                    <span class="sound_only">로그아웃</span><span class="ico_ir"></span>
+                                </a>
+                            </li> -->
+                            <li>
+                                <a href="#" class="site_map" title="사이트맵">
+                                    <span class="sound_only">사이트맵</span><span class="ico_ir"></span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- end : gnb_r -->
                     </div>
+
+                </div>
+
+                <div class="mgnb_wp">
+                    <a href="#none" id="mMenu" title="모바일 메뉴 열기">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                    <nav id="mGnb">
+
+                        <div class="mgnb_top">
+                            <div class="t_abox">
+                                <div class="ta_l">
+                                    <span class="fb3">전체메뉴</span>
+                                </div>
+                                <div class="ta_r">
+                                    <a href="#" class="help_desk ir_pm" target="_blank">헬프데스크</a>
+                                    <a href="#" class="ir_pm log_in">로그인</a>
+                                    <a href="#" class="ir_pm site_map">사이트맵</a>
+                                </div>
+                            </div>
+                            <div class="t_box">
+                                <div class="in_box">
+                                    <div class="ico"></div>
+                                    <p>NEO<br>홈페이지 방문을 환영합니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <ul id="head_menu" class="mDepth1">
+                            <li class="lnb1 mnfirst">
+                                <a href="#none" class="active">About</a>
+                                <ul class="mDepth2">
+                                    <li class="sub01 subfirst"><a href="#none">NEO</a></li>
+                                    <li class="sub02"><a href="#none">Vision</a></li>
+                                    <li class="sub03"><a href="#none">Directions</a></li>
+                                </ul>
+                            </li>
+                            <li class="lnb2">
+                                <a href="#none">Portfolio</a>
+                            </li>
+                            <li class="lnb3">
+                                <a href="#none">Business</a>
+                                <ul class="mDepth2">
+                                    <li class="sub01 subfirst"><a href="#none">Website</a></li>
+                                    <li class="sub02"><a href="#none">Research & Dev</a></li>
+                                    <li class="sub03"><a href="#none">Consulting Service</a></li>
+                                    <li class="sub04"><a href="#none">System Integration</a></li>
+                                </ul>
+                            </li>
+                            <li class="lnb4">
+                                <a href="#none">Solution</a>
+                                <ul class="mDepth2">
+                                    <li class="sub01 subfirst"><a href="#none">CMS</a></li>
+                                    <li class="sub02"><a href="#none">IR-CMS</a></li>
+                                    <li class="sub03"><a href="#none">Security Solutions</a></li>
+                                </ul>
+                            </li>
+                            <li class="lnb5">
+                                <a href="#none">Community</a>
+                                <ul class="mDepth2">
+                                    <li class="sub01 subfirst"><a href="#none">Notice</a></li>
+                                    <li class="sub02"><a href="#none">Contact</a></li>
+                                    <li class="sub03 sublast"><a href="#none">reference</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a href="javascript:mGnbClose();" class="mGnbClose"><span class="mn_close"></span>모바일 메뉴 닫기</a>
+                    </nav>
                 </div>
             </div>
-            <a href="#none" id="mMenu" title="모바일 메뉴 열기">
-                <span></span>
-                <span></span>
-                <span></span>
-            </a>
-            <div id="mGnb">
-                <div class="mgnb_top">
-                    <div class="t_abox">
-                        <a href="#">Home</a>
-                        <a href="#">Help desk</a>
-                        <a href="#">Login</a>
-                        <a href="#">Sitemap</a>
-                    </div>
-                    <div class="t_box">
-                        <p>NEO</p>
-                        <p>홈페이지 방문을 환영합니다.</p>
-                    </div>
+            <div class="snb_bar">
+                <div class="inner">
+                    <ul class="snb">
+                        <li>
+                            <a href="#">
+                                <span>NEO</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Vision</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="active">
+                                <span>Direction</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="mDepth1">
-                    <li>
-                        <a href="#">About</a>
-                        <ul class="mDepth2">
-                            <li><a href="#none">NEO</a></li>
-                            <li><a href="#none">Vision</a></li>
-                            <li><a href="#none">Directions</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#">Business</a>
-                        <ul class="mDepth2">
-                            <li><a href="#none">web</a></li>
-                            <li><a href="#none">Research & Dev</a></li>
-                            <li><a href="#none">Consulting Service</a></li>
-                            <li><a href="#none">System Integration</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Solution</a>
-                        <ul class="mDepth2">
-                            <li><a href="#none">CMS</a></li>
-                            <li><a href="#none">IR-CMS</a></li>
-                            <li><a href="#none">Security Solution</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#none">Community</a>
-                        <ul class="mDepth2">
-                            <li><a href="#none">notice</a></li>
-                            <li><a href="#none">Quotation inquiry</a></li>
-                            <li><a href="#none">reference</a></li>
-                            <li><a href="#none">Help desk</a></li>
-                        </ul>
-                    </li>
-                </ul>
             </div>
         </header>
 
 
         <div id="container">
             <div id="sub">
-                <div class="snb_bar">
-                    <div class="inner">
-                        <ul class="snb">
-                            <li>
-                                <a href="#" class="active">
-                                    <span>NEO</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span>Vision</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span>Direction</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
                 <div class="sub_wrap">
                     <div class="pg_tit">
                         <div class="inner">
@@ -216,6 +233,9 @@
                                         <a class="btn btn_m bg_w ico_box" href="https://kko.to/vl0jrriOHD" title="클릭시 새창열림" target="_blank"><span>지도 크게보기</span><span class="ico"><img src="/_KOR/img/ico_blank_bk.png" alt=""></span></a>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="sec sec02">
+                                
                             </div>
                         </div>
                     </div>
