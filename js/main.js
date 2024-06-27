@@ -123,7 +123,6 @@ $(document).ready(function(){
 		}
 	});
 
-
 	// 메인 - 공지사항 탭
 	$('.board_tabs > li > a.tab_link').on('focus click' ,function(){
 		$(this).addClass('active');		
@@ -141,4 +140,15 @@ $(document).ready(function(){
 		$(this).parent().children("ul").stop().slideToggle();
 		$(this).parent().siblings().children("ul").stop().slideDown();
 	});
+
+	// 서브 - 보안솔루션 탭
+	$(function(){
+		$('.tab_con_wrap > div').hide();
+		$('.ss_nav a').click(function () {
+		  $('.tab_con_wrap > div').hide().filter(this.hash).fadeIn();
+		  $('.ss_nav a').removeClass('focusOn');
+		  $(this).addClass('focusOn');
+		  return false;
+		}).filter(':eq(0)').click();
+		});
 });
