@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/* 포트폴리오 */
+/* 포트폴리오 - list*/
 .bogal_bgBox {background: linear-gradient(#f6faff, #fff);margin-top: 120px;padding-top: 100px;}
 .bogal_list > ul {display: flex;flex-wrap: wrap;margin: 0 -32px;}
 .bogal_list > ul > li {width: calc((100% - 192px) / 3);margin: 32px;transition: all 0.5s ease;}
@@ -14,3 +14,19 @@
 .bogal_list > ul > li .h_op {color: #fff;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);transition: .3s ease-in-out;font-size: 0;}
 .bogal_list > ul > li a:hover .h_op {font-size: 1.25rem;}
 /* .bogal_list > ul > li a:hover .h_udl {color: #1a72e7;} */
+
+/* 포트폴리오 - view*/
+/* .hd_tit {position: absolute; top: -150px;left: 50%;transform: translateX(-50%);padding: 1.5rem 3.75rem;background: #fff;border-radius: 10px;box-shadow: 4px 4px 24px 5px rgb(0, 0, 0, 0.06);}
+.hd_tit .tit {white-space: nowrap;} */
+.bogal_view_wp .hd_tit .tag span {padding: 4px 15px;color: #fff;background: #1a72e7;border-radius: 20px;margin-bottom: 7px;font-size: 0.875rem;}
+.bogal_view_wp .hd_tit {margin-top: 120px;margin-bottom:60px}
+.bogal_view_wp .bogal_bgBox {margin-top: 0;padding-top: 60px;}
+.bogal_view_wp .view_top .frame_box {position: relative;width: 520px;display: flex;justify-content: center;padding-left: 5px;padding-top: 22px;}
+.bogal_view_wp .view_top .frame_box::after {content: '';display: block;width: 520px;height: 310px;background: url(../images/pf_frame.png) no-repeat center;position: absolute;top: 0;left: 0;}
+.bogal_view_wp .view_top .img_box {width: 400px;height: 250px;overflow: hidden;}
+.bogal_view_wp .view_top .con_box {width: calc(100% - 520px);padding-left: 32px;padding-top: 16px;}
+.bogal_view_wp .view_top .btn_box .btn {border: 1px solid #ddd;background: #fff;font-weight: 300 !important;}
+.bogal_view_wp .view_notice {padding-left: 25px;position: relative;}
+.bogal_view_wp .view_notice::after {content: '!';display: block;width: 16px;height: 16px;border: 1px solid #3e3333;border-radius: 50%;text-align: center;line-height: 16px;text-align: center;font-size: 0.75rem;position: absolute;top: 0;left: 0;}
+.bogal_view_wp .view_notice p {font-size: 14px;margin-bottom: 5px;}
+.bogal_view_wp .view_bottom {margin-top: 120px;background: #fff;box-shadow: 4px 4px 24px 5px rgb(0, 0, 0, 0.06);}
