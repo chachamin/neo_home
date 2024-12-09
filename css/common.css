@@ -3,7 +3,7 @@
 /* reset */
 html {width:100%;}
 body {margin:0; padding:0; background:#fff; overflow-y:scroll; height:100%; width:100%;	word-break:keep-all;}
-body {font-family:"Esamanru", "맑은고딕","Malgun Gothic", "AppleGothicNeoSD", "Apple SD 산돌고딕 Neo", "sans-serif"; -webkit-font-smoothing: antialiased; font-size:16px; font-weight:300; letter-spacing:-0.5px; color:#121212; line-height:1.2;}
+body {font-family:"Esamanru", "맑은고딕","Malgun Gothic", "AppleGothicNeoSD", "Apple SD 산돌고딕 Neo", "sans-serif"; -webkit-font-smoothing: antialiased; font-size:16px; font-weight:300; letter-spacing:-0.5px; color:#121212; line-height:1.5;}
 * {color:inherit; font-family:inherit; font-size:inherit; font-weight:inherit; letter-spacing:inherit; line-height:inherit;box-sizing: border-box;}
 
 article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {display:block;}
@@ -134,7 +134,10 @@ ul.ulfl > li{float:left}
 
 .img_text{font-size:0 !important}
 
-
+.fw_1 {font-weight:300}
+.fw_2 {font-weight:400}
+.fw_3 {font-weight:500}
+.fw_4 {font-weight:600}
 
 /* Typography */
 .h1{font-size:2.75rem;line-height:3.575rem;} /* 44px */
@@ -205,6 +208,7 @@ ul.ulfl > li{float:left}
 .mt36{margin-top:2.25rem !important;}
 .mt40{margin-top:2.5rem !important;}
 .mt44{margin-top:2.75rem !important;}
+.mt120{margin-top:7.5rem !important;}
 
 .mb0 {margin-bottom:0px !important;}
 .mb4 {margin-bottom:0.25rem !important;}
@@ -247,8 +251,8 @@ ul.ulfl > li{float:left}
 /*------------------------------------*\
   button
 \*------------------------------------*/
-.btn{position: relative;font-weight:600;padding:12px 16px;display: inline-flex;justify-content: center;align-items: center;white-space:nowrap;text-align: center;vertical-align: middle;border: 0 solid transparent;border-radius:8px;transition:all .2s ease;}
-.btn > *{font-weight:600;}
+.btn{position: relative;padding:12px 16px;display: inline-flex;justify-content: center;align-items: center;white-space:nowrap;text-align: center;vertical-align: middle;border: 0 solid transparent;border-radius:8px;transition:all .2s ease;}
+
 .btn_ss{padding:4px 8px;font-size:.75rem ;border-radius:4px;}
 .btn_s{padding:8px 16px;font-size:.875rem ;border-radius:4px;}
 .btn_m{padding:12px 28px;}

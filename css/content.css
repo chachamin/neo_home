@@ -14,6 +14,9 @@
 .sub_content .mid_tit span::after {content: '';display: block;width: 20px;height: 20px;border-radius:50%;position: absolute;top: 0;right: -10px;background-color: #bcd9ff;z-index: -1;}
 .sub_content .shadow_box {box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 7px;}
 
+.subtit_3-1 {position: relative;margin-bottom: 20px;padding-left: 24px;font-size: 1.375rem;font-weight: 500;text-align: left;}
+.subtit_3-1::after {content: '';display: block;width: 20px;height: 20px;background: url(../images/ico_tit_deco.png) no-repeat center;position: absolute;top: 3px;left: 0;}
+
 /* 서브 섹션 */
 /* .sec + .sec{margin-top:72px;} */
 .in_box + .in_box{margin-top:40px;}
@@ -64,6 +67,7 @@
 .sub_content ul.add_dot li::after {content: '';display: block;width: 5px;height: 5px;background: #595757;border-radius: 50%;position: absolute;top: 7px;left: 0;}
 .sub_content ul.add_chki li {position: relative;padding-left: 30px;margin: 16px 0;}
 .sub_content ul.add_chki li::after {content: '';display: block;width: 20px;height: 20px;background: url(../images/add_chki_ico.png) no-repeat center;position: absolute;top: 0;left: 0;}
+.sub_content ul.add_dot.dash_tp li::after{border-radius: 0;width: 5px;height: 2px;}
 
 /* table */
 .basic_tb:before{content:'';position:absolute;top:0;left:0;width:100%;height:1px;background:#6B7684;}
@@ -246,3 +250,5 @@
 .sol_ss .con_tit {margin-bottom: 1rem;}
 .sol_ss .con_tit .ico {background: #1a72e7;width: 40px;height: 40px;border-radius: 3px;}
 .sol_ss .con_tit .con {padding-left: 12px;font-weight: 700;}
+
+/* 개인정보 처리방침 */

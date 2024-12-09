@@ -40,7 +40,7 @@
             <div class="gnb_area">
                 <div class="logo_wp p_r">
                     <h1 class="logo_box">
-                        <a href="/">
+                        <a href="index.html">
                             <div class="symbol">
                                 <span class="sound_only">NEO New E-information Organization</span>
                             </div>
@@ -159,24 +159,186 @@
                 <div class="sub_wrap">
                     <div class="pg_tit">
                         <div class="inner">
-                            <p class="typo">Project Request</p>
+                            <!-- <p class="typo">Project Request</p> -->
+                            <p class="typo">Contact</p>
                             <p class="tit_sub">다년간 축적된 경험으로 고객 만족을 넘어 고객이 신뢰하는 파트너가 되겠습니다.</p>
                         </div>
                     </div>
                     <div class="sub_content">
-                        <div class="request_app_wp">
-                            <div class="req_form">
+                        <div class="request_app_wp inner">
+                            <div class="req_form bo_form">
                                 <div class="form_tit">기본정보</div>
-                                <div class="input_box">
-                                    <div class="half_box">
-                                        <label>회사명</label>
-                                        <input type="text">
+                                <div class="form_row sec_col col_3">
+                                    <div class="form_group">
+                                        <label for="cname" class="label">
+                                            <span class="text">회사명</span><span class="required">필수</span>
+                                        </label>
+                                        <input type="text" name="m_compay" class="input" id="cname" placeholder="회사명 입력"
+                                            title="회사명 입력">
                                     </div>
-                                    <div class="half_box">
-                                        <label>회사명</label>
-                                        <input type="text">
+                                    <div class="form_group">
+                                        <label for="pname" class="label">
+                                            <span class="text">담당부서</span><span class="required">필수</span>
+                                        </label>
+                                        <input type="text" name="m_part" class="input" id="pname" placeholder="담당부서 입력"
+                                            title="담당부서 입력">
+                                    </div>
+                                    <div class="form_group">
+                                        <label for="cpname" class="label">
+                                            <span class="text">담당자</span><span class="required">필수</span>
+                                        </label>
+                                        <input type="text" name="m_contp" class="input" id="cpname" placeholder="담당자 입력"
+                                            title="담당자 입력">
                                     </div>
                                 </div>
+                                <div class="form_row sec_col col_3">
+                                    <div class="form_group">
+                                        <label for="telephone" class="label">
+                                            <span class="text">연락처</span><span class="required">필수</span>
+                                        </label>
+                                        <input type="text" name="m_tel" class="input" id="telephone" placeholder="연락처 입력" title="연락처 입력">
+                                    </div>
+                                    <div class="form_group">
+                                        <label for="mail" class="label">
+                                            <span class="text">이메일</span><span class="required">필수</span>
+                                        </label>
+                                        <input type="text" name="m_mail"" class=" input" id="mail"" placeholder="이메일 입력" title="이메일 입력">
+                                    </div>
+                                </div>
+                                <div class="form_tit">의뢰내용</div>
+                                <div class="form_row">
+                                    <div class="form_group">
+                                        <div class="input_box">
+                                            <p class="label"><span class="text">의뢰분야 </span> <span class="body_5">(중복선택가능)</span><span class="required">필수</span></p>
+                                            <ul class="check_wp chk_st1 req_select" id="a_list">
+                                                <li class="checkbox">
+                                                    <input type="checkbox" name="data06" id="new" value="new">
+                                                    <label for="new">신규사업추진</label>
+                                                </li>
+                                                <li class="checkbox">
+                                                    <input type="checkbox" name="data06" id="renewal" value="renewal">
+                                                    <label for="renewal">웹사이트 리뉴얼</label>
+                                                </li>
+                                                <li class="checkbox">
+                                                    <input type="checkbox" name="data06" id="maintenance" value="maintenance">
+                                                    <label for="maintenance">현재 사이트 유지보수</label>
+                                                </li>
+                                                <li class="checkbox">
+                                                    <input type="checkbox" name="data06" id="etc" value="etc">
+                                                    <label for="etc">기타</label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- // input_box -->
+                                    </div>
+                                    <!-- // form_group -->
+                                </div>
+
+                                <div class="form_row sec_col col_3">
+                                    <div class="form_group">
+                                        <label for="pay" class="label">
+                                            <span class="text">프로젝트 예산</span><span class="required">필수</span>
+                                        </label>
+                                        <select name="data01" id="pay">
+                                            <option value="">프로젝트 예산(만원)</option>
+                                            <option value="300_less">300이하</option>
+                                            <option value="300to500">300 ~ 500</option>
+                                            <option value="500to700">500 ~ 700</option>
+                                            <option value="1000_more">1000이상</option>
+                                            <option value="no_data1">미정</option>
+                                        </select>
+                                    </div>
+                                    <div class="form_group">
+                                        <label for="day" class="label">
+                                            <span class="text">프로젝트 기간</span><span class="required">필수</span>
+                                        </label>
+                                        <select name="data02" id="day">
+                                            <option value="">프로젝트 기간</option>
+                                            <option value="1to3">1 ~ 3개월 이내</option>
+                                            <option value="4to6">4 ~ 6개월 이내</option>
+                                            <option value="6_over">6개월 이상</option>
+                                            <option value="no_data2">미정</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form_row">
+                                    <div class="form_group">
+                                        <label for="specifics" class="label">
+                                            <span class="text">상세내용</span>
+                                        </label>
+                                        <textarea name="content" id="specifics" placeholder="기존 자료(사이트)가 있는 경우 웹사이트 주소 등을 첨부해주세요.&#10;신규 작업인 경우 원하시는 컨셉을 알려주시면 상담에 도움이 됩니다." class="w100p"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form_row">
+                                    <div class="form_group">
+                                        <p class="label"><span class="text">첨부파일</span></p>
+                                        <ul class="add_file">
+                                            <li><input type="file" name="filename0" id="filename0" size="70%" class="file" onchange="reviewUploadImg(this, this.name, 'jpg,gif,hwp,xls,xlsx');"></li>
+                                            <li><input type="file" name="filename1" id="filename1" size="70%" class="file" onchange="reviewUploadImg(this, this.name, 'jpg,gif,hwp,xls,xlsx');"></li>
+                                        </ul>
+                                        <p class="add_noite">jpg, gif, hwp, xls, xlsx 파일만 가능합니다. 용량제한 20MB.</p>
+                                    </div>
+                                </div>
+                                <div class="form_row">
+                                    <div class="form_group">
+                                        <div class="input_box">
+                                            <p class="label"><span class="text">상담방법</span><span class="required">필수</span></p>
+                                            <ul class="check_wp chk_st1 req_select" id="c_list">
+                                                <li class="checkbox">
+                                                    <input type="radio" name="data08" id="send" value="send">
+                                                    <label for="send">견적서 이메일 발송</label>
+                                                </li>
+                                                <li class="checkbox">
+                                                    <input type="radio" name="data08" id="tel_c" value="tel_c">
+                                                    <label for="tel_c">전화상담 + 견적서 발송</label>
+                                                </li>
+                                                <li class="checkbox">
+                                                    <input type="radio" name="data08" id="door_c" value="door_c">
+                                                    <label for="door_c">방문상담 + 견적서 발송</label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- // input_box -->
+                                    </div>
+                                    <!-- // form_group -->
+                                </div>
+                                <div class="form_tit">개인정보의 수집 및 이용 동의</div>
+                                <div class="policy_wp">
+                                    <p>네오(이하 ‘회사’)가 수집 및 이용하는 본인의 개인정보는 『정보통신망이용촉진 및 정보보호 등에 관한 법률』에 따라 본인의 동의를 얻어야 하는 정보입니다.</p>
+                                    <div class="in_box mt16">
+                                        <p class="fw_3">1. 수집하는 개인정보의 항목</p>
+                                        <ul class="add_dot mt8">
+                                            <li>입력항목 : 이름, 연락처, 이메일, 회사명, 직책 등</li>
+                                            <li>자동수집항목 : IP Address, 서비스 이용기록 등</li>
+                                        </ul>
+                                        <p class="fw_3 mt20">2. 개인정보의 수집 및 이용 목적</p>
+                                        <ul class="add_dot mt8">
+                                            <li>수집한 개인정보는 다음의 목적을 위해 활용합니다.
+                                                <ul class="add_dot dash_tp">
+                                                    <li>고객문의 시 회사관련 문의, 서비스 문의, 투자 문의, 채용 문의 등에 대한 정보 제공 및 안내</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <p class="fw_3 mt20">3. 개인정보의 보유 및 이용기간</p>
+                                        <ul class="add_dot mt8">
+                                            <li>정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체 없이 파기합니다.단, 다음의 정보에 대해서는 아래의 이유로 명시한 기간 동안 보존합니다.
+                                                <ul class="add_dot dash_tp mt8">
+                                                    <li>모든 개인정보 입력항목에 대해서 12개월간 보유하며, 이후 모든 정보는 파기합니다. (단, 성명 및 이메일은 문의내역 관리를 위해 36개월간 보관)</li>
+                                                    <li>성명과 이메일 정보에 대하여 파기를 원하는 개인은 shkim@neoitc.co.kr 으로 요청주시면 바로 처리하겠습니다.</li>
+                                                    <li>기타 개인정보에 대하여 보유기간을 회원에게 개별적으로 사전 동의를 받은 경우에는 약속한 보유기간 동안 보유합니다.</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="agr_bottom">
+                                        <input type="checkbox" name="agree" value="Y" id="agree" title="위 내용을 확인하였으며 개인정보 수집 및 이용에 동의합니다.">
+                                        <label for="agree">위 내용을 확인하였으며 개인정보 수집 및 이용에 동의합니다.</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn_group mt40 t_a_c">
+                                <a href="javascript:void(0);" onclick="cancel_check();" class="btn bg_bk_bo">취소</a>
+                                <a href="#" onclick="ins('ins'); return false;" class="btn bg_blue">견적문의</a>
                             </div>
                         </div>
                     </div>
@@ -226,13 +388,19 @@
                                 </span>
                             </a>
                             <ul class="ulfl">
-                                <li><a href="https://www.koreahtml5.kr" target="_blank" title="새창열기">korea html5</a></li>
+                                <li><a href="https://www.koreahtml5.kr" target="_blank" title="새창열기">korea html5</a>
+                                </li>
                                 <li><a href="http://validator.kldp.org" target="_blank" title="새창열기">W3C Markup</a></li>
-                                <li><a href="https://www.sslshopper.com/csr-decoder.html" target="_blank" title="새창열기">CSR Decoder</a></li>
-                                <li><a href="https://www.webpagetest.org" target="_blank" title="새창열기">WebpageTest</a></li>
-                                <li><a href="http://css-validator.kldp.org" target="_blank" title="새창열기">W3C CSS검사</a></li>
-                                <li><a href="https://www.securesign.kr/tools/online-check-ssl-installation" target="_blank" title="새창열기">SSL Checker</a></li>
-                                <li><a href="https://developers.google.com/speed/pagespeed/insights" target="_blank" title="새창열기">PageSeed Insights</a></li>
+                                <li><a href="https://www.sslshopper.com/csr-decoder.html" target="_blank"
+                                        title="새창열기">CSR Decoder</a></li>
+                                <li><a href="https://www.webpagetest.org" target="_blank" title="새창열기">WebpageTest</a>
+                                </li>
+                                <li><a href="http://css-validator.kldp.org" target="_blank" title="새창열기">W3C CSS검사</a>
+                                </li>
+                                <li><a href="https://www.securesign.kr/tools/online-check-ssl-installation"
+                                        target="_blank" title="새창열기">SSL Checker</a></li>
+                                <li><a href="https://developers.google.com/speed/pagespeed/insights" target="_blank"
+                                        title="새창열기">PageSeed Insights</a></li>
                                 <li><a href="https://www.privacy.go.kr" target="_blank" title="새창열기">개인정보보호종합포털</a></li>
                             </ul>
                         </div>
