@@ -123,10 +123,10 @@
 .pagination > ul{display:flex;text-align:center;justify-content:center;flex-wrap:wrap;}
 .pagination > ul li{margin:0 2px;display:flex;}
 .pagination a{display:block;vertical-align:middle;text-align:center;line-height:36px;width:36px;height:36px;border-radius:8px;font-size: 0.875rem;}
-.pagination .ico{font-size:0;background:url('/hanium/img/bo_ir.svg') no-repeat 2px 4px #fff;border:0;margin:0 2px;border:1px solid #CDD0D5;}
-.pagination .ico.prev{background-position:-30px 4px}
-.pagination .ico.next{background-position:-60px 4px}
-.pagination .ico.last{background-position:-91px 4px}
+.pagination .ico{font-size:0;background:url('/images/bo_ir.png') no-repeat 1px 1px #fff;border:0;margin:0 2px;border:1px solid #CDD0D5;}
+.pagination .ico.prev{background-position:-33px 1px}
+.pagination .ico.next{background-position:-63px 1px}
+.pagination .ico.last{background-position:-94px 1px}
 
 .pagination a.active{background:#595757;color:#fff;font-weight:400;border-color:#595757}
 .pagination a:not(.active):hover{background-color:#f0f0f0;}
