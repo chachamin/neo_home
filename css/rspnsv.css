@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+@media (max-width: 1580px) {
+    /*메인*/
+    .main_vsual_wp .slick-nav a.slick-prev {left: 24px;}
+    .main_vsual_wp .slick-nav a.slick-next {right: 24px;}
+
+    .main_sec03 .work_cont_wrap {width: 1400px;margin-left: 0;left: 0;margin: 0 auto;padding: 0 1.25rem;margin-top: 24px;}
+    .main_sec03 .work_sd {width: 100%;}
+    .work_sd .slick-dots li {width: calc(100% / 7);}
+    .work_sd .slick-dots li + li {margin-left: -3px;}
+    .work_sd .slick-dots button {width: 100%;}
+}
+
+@media (max-width: 1440px) {
+    /*메인*/
+    .main_v_sd .item .text_box {padding-left: 100px;}
+}
+
+@media (max-width: 1400px) {
+    /*공통*/
+    .inner {width: 100%;}
+
+    /*메인*/
+    .main_vsual_wp .slick-dots {width: 100%;}
+    .main_sec03 .work_cont_wrap {width: 100%;}
+}
+
+@media (max-width: 1280px) {
+    /*메뉴*/
+    #gnb {display: none;}
+    #header .gnb_r {top: 24px;}
+    #header .gnb_r li:last-child {display: none;}
+    #header .gnb_r li:nth-child(2) {margin-right:12px;}
+    #mMenu {display: block;}
+
+    .snb_bar {margin-top: 92px;}
+
+    /*서브 - 사업소개*/
+    .business_part .service_box ul li {width: 250px;height: 250px;margin-left: -20px;}
+
+}
+
+@media (max-width: 1180px) {
+
+}
+
+@media (max-width: 1024px) {
+
+    /*메인*/
+    .main_sec04 .area_wrap {flex-wrap: wrap;}
+    .main_sec04 .left_area {width: 100%;}
+    .main_sec04 .right_area {width: 100%;padding-left: 0;}
+    .aside ul > li {flex-wrap: wrap;justify-content: center;}
+    .aside ul > li .text {text-align: center;padding-top: 10px;}
+
+    /*서브 - 사업소개*/
+    .business_part .intro {padding:0;}
+    .business_part .service_box ul {flex-wrap: wrap;}
+    .business_part .service_box ul li {width: 230px;height: 230px;}
+}
+
+@media (max-width: 820px) {
+    /*서브 - 사업소개*/
+    .business_part .process_list {justify-content: start;margin: -16px -16px;}
+    .business_part .process_list li {width: calc(100% / 3 - 32px);margin:16px;}
+    .business_part .process_list li::after {right: -26px;}
+    .business_part .process_list li:nth-child(4n)::after {display: block;}
+    .business_part .process_list li:last-child::after {display:none;}
+    .business_part .process_list li:nth-child(3n)::after {display:none;}
+}
+
+@media (max-width: 768px) {
+
+
+}
+
+@media (max-width: 720px) {
+
+
+}
+
+@media (max-width: 560px) {
+
+
+}
+
+@media (max-width: 480px) {
+
+}
+
+@media (max-width: 420px) {
+
+
+}
+
+@media (max-width: 375px) {
+
+
+}

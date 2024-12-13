@@ -31,20 +31,31 @@ $(document).ready(function(){
         centerMode: false,
 
 		responsive: [
-
 			{
-			  breakpoint: 960,
-			  settings: {
-				slidesToShow: 2,
-				centerMode: true
-			  }
+				breakpoint: 1444,
+				settings: {
+					slidesToShow: 4
+				}
 			},
 			{
-			  breakpoint: 620,
-			  settings: {
-			   centerMode: true,
-				slidesToShow: 1
-			  }
+				breakpoint: 1025,
+				settings: {
+					slidesToShow: 3,
+				}
+			},
+			{
+				breakpoint: 960,
+				settings: {
+					slidesToShow: 2,
+				centerMode: true
+				}
+			},
+			{
+				breakpoint: 620,
+				settings: {
+					slidesToShow: 1,
+				centerMode: true
+				}
 			}
 		  ]
 
@@ -118,15 +129,15 @@ $(document).ready(function(){
 				$("#header").addClass("fixed");
 
 			} else {
-				$("#header").removeClass("fixed");	
+				$("#header").removeClass("fixed");
 			}
 		}
 	});
 
 	// 메인 - 공지사항 탭
 	$('.board_tabs > li > a.tab_link').on('focus click' ,function(){
-		$(this).addClass('active');		
-		$(this).parent('li').siblings('li').find('a').removeClass('active');		
+		$(this).addClass('active');
+		$(this).parent('li').siblings('li').find('a').removeClass('active');
 		$(this).parent('li').find('div').css('display','block');
 		$(this).parent('li').siblings('li').find('div').css('display','none');
 		$(this).parent('li').find('a.more').css('display','inline-flex');
@@ -145,10 +156,10 @@ $(document).ready(function(){
 	$(function(){
 		$('.tab_con_wrap > div').hide();
 		$('.ss_nav a').click(function () {
-		  $('.tab_con_wrap > div').hide().filter(this.hash).fadeIn();
-		  $('.ss_nav a').removeClass('focusOn');
-		  $(this).addClass('focusOn');
-		  return false;
+			$('.tab_con_wrap > div').hide().filter(this.hash).fadeIn();
+			$('.ss_nav a').removeClass('focusOn');
+			$(this).addClass('focusOn');
+			return false;
 		}).filter(':eq(0)').click();
-		});
+	});
 });
