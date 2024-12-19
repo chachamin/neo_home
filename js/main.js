@@ -162,4 +162,52 @@ $(document).ready(function(){
 			return false;
 		}).filter(':eq(0)').click();
 	});
+
+	// -------------------------- mGnb 열기 --------------------------
+ 
+	$("#mMenu").click(function(){
+		$("#mGnb").css("display","block");
+		$("#mGnb").animate({right: 0}, 300);			
+		$(".mDepth1 > li:first-child > .mDepth2").css("display","block");
+	});
+
+	//  mGnb 메뉴 열기닫기  
+	$(".mDepth1 > li > a").click(function(){
+		$(this).addClass("active");
+		$(this).parent().siblings().children("a").removeClass("active");
+		$(this).parent().children("ul").stop().slideDown();
+		$(this).parent().siblings().children("ul").stop().slideUp();
+	});
+	//mGnb menu
+	$(".mDepth2 > li > a").click(function(){
+		$(".mDepth2 > li > a").removeClass("active");
+		$(".mDepth3 li").removeClass("active");
+		var mDepth3 = $(this).siblings("ul").css("display");
+		if( mDepth3 == "block" ) {
+			$(this).siblings("ul").slideUp(300);
+		} else {
+			$(this).addClass("active");
+			$(".mDepth3").slideUp(300);
+			$(this).siblings("ul").slideDown(300);
+			$(this).siblings("ul").find("li").addClass("active");
+		}
+	});
+});
+
+// -------------------------- mGnb close --------------------------
+function mGnbClose() {
+	$("#mGnb").animate({right: "-100%"}, 300);
+	$("#mGnb").fadeOut(300);
+	$(".mDepth2 > li > a").removeClass("active");
+	$(".mDepth3").slideUp(300);
+}
+
+//  -------------------------- mGnb display --------------------------
+$( window ).resize(function() {
+	var winWidth = $( window ).width();
+	if(winWidth >= 1440) {
+		mGnbClose();
+		} else {
+		mGnbClose();
+		}
 });

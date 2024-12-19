@@ -80,25 +80,25 @@
 #header.main_header.fixed #mMenu {border-color: #121212;}
 #header.main_header.fixed #mMenu .ico_ir {background-position: -97px -50px;}
 #mGnb{display:none;position:fixed;top:0;right:-100%;z-index:600;width:100%;height:100%;overflow-y:scroll;background:#fff;box-shadow:-4px -1px 2px rgba(0,0,0,0.1);color:#121212;z-index:999;}
-#mGnb:before{content:'';position:absolute;top:160px;left:0;height:100%;width:calc((100% - 16px) * 0.3);background:#F5F7FA;z-index:0}
+#mGnb:before{content:'';position:absolute;top:160px;left:0;height:100%;width:calc((100% - 16px) * 0.35);background:#F5F7FA;z-index:0}
 #mGnb .mgnb_top {position:relative;padding:12px;border-bottom:1px solid #a8b2be;background:#fff;}
-#mGnb .mgnb_top .t_abox{display:flex;justify-content: space-between;padding:8px 8px 12px 8px;align-items:center;}
+#mGnb .mgnb_top .t_abox{display:flex;justify-content: end;padding:8px 8px 12px 8px;align-items:center;}
 #mGnb .mgnb_top .t_abox .ta_l span{padding-left:32px;font-size:1.125rem;}
 #mGnb .mgnb_top .t_abox .ta_r a{margin-left:8px;color:#162C72;font-weight:700;font-size:.875rem;}
 #mGnb .mgnb_top .t_abox .ta_r .a_lang{padding:8px 12px;border:2px solid #162C72;border-radius:4px;}
 #mGnb .mgnb_top .t_box{margin:12px 0 20px;padding:16px;line-height:1.5rem;background:#F1F5F9;border-radius:8px;}
 #mGnb .mgnb_top .t_box .in_box{display:flex;align-items:center;color:#121212;}
-#mGnb .mgnb_top .t_box .in_box .ico{margin-right:8px;width:48px;height:48px;background:url('/_KOR/img/mgnb_logo.svg') no-repeat 50% 50% #fff;border:1px solid #E5E7EB;border-radius:50%;}
+#mGnb .mgnb_top .t_box .in_box .ico{margin-right:8px;width:48px;height:48px;background:url('/images/mgnb_logo.png') no-repeat 50% 50% #fff;border:1px solid #E5E7EB;border-radius:50%;}
 
 #mGnb #head_menu{position:relative;padding-top:24px;}
 #mGnb .mDepth1{position:relative;box-sizing:border-box;}
 #mGnb .mDepth1 > li{width:35%;padding-left:16px;}
-#mGnb .mDepth1 > li > a{display:block;padding:14px 10px;font-size:1.15em;font-weight:bold;z-index:50;text-align:left;border-bottom:1px solid rgba(255,255,255,.5);border-radius:8px;}
+#mGnb .mDepth1 > li > a{display:block;padding:14px 10px;font-size:1rem;font-weight:bold;z-index:50;text-align:left;border-bottom:1px solid rgba(255,255,255,.5);border-radius:8px;}
 #mGnb .mDepth1 > li > a.active{background:#162C72;color:#fff}
 #mGnb .mDepth2{display:none;position:absolute;top:0;right:0;width:calc((100% - 48px) * 0.65);margin:32px 24px 0;z-index:30;background:#fff;}
 #mGnb .mDepth2 > li > a{display:block;padding:15px 10px;border-bottom:1px solid #e5e5e5;font-size:1em;color:#333;background:url('/_KOR/img/m_gnb_r.png') no-repeat 96% center/9px auto;}
-#mGnb .mDepth2 > li > a[href="#none"]{background:url('/_KOR/img/m_gnb_plus.png') no-repeat 96% center/15px auto;}
-#mGnb .mDepth2 > li > a[href="#none"].active{background:url('/_KOR/img/m_gnb_minus.png') no-repeat 96% center/15px auto;}
+#mGnb .mDepth2 > li > a[href="#none"]{background:url('/images/m_gnb_plus.png') no-repeat 96% center/15px auto;}
+#mGnb .mDepth2 > li > a[href="#none"].active{background:url('/images/m_gnb_minus.png') no-repeat 96% center/15px auto;}
 #mGnb .mDepth1 > li:first-child .mDepth2{display:block;}
 #mGnb .mDepth3{display:none;padding:10px;overflow:hidden;background:#f5f6fa;}
 #mGnb .mDepth3 li{float:left;width:100%;transition: all 300ms ease-out;transform: translateY(120%);transition-delay: 300ms;opacity:0;}
@@ -107,7 +107,7 @@
 #mGnb .mDepth3 li.active:nth-child(even){transition-delay: 200ms;}
 #mGnb .mDepth3 li a{position:relative;display:block;margin-bottom:1px;padding:10px;background:#f5f6fa;border-bottom:1px solid #eee;font-size:.9em}
 #mGnb .mDepth3 li a:before{content:'';position:absolute;left:0;top:18px;display:block;width:4px;height:1px;background:#a7adbc}
-#mGnb .mGnbClose{display:inline-block;position:absolute;left:12px;top:20px;width:32px;height:32px;font-size:0;background:url('/_KOR/img/m_gnb_close.svg') no-repeat 50% 50%;}
+#mGnb .mGnbClose{display:inline-block;position:absolute;left:12px;top:20px;width:32px;height:32px;font-size:0;background:url('/images/m_gnb_close.svg') no-repeat 50% 50%;}
 #mGnb .mn_close {position: relative;display: inline-block;width: 28px;height: 28px;overflow: hidden;}
 #mGnb .mn_close:before{-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);-ms-transform: rotate(45deg);-o-transform: rotate(45deg);transform: rotate(45deg);}
 #mGnb .mn_close:after{-webkit-transform: rotate(-45deg);-moz-transform: rotate(-45deg);-ms-transform: rotate(-45deg);-o-transform: rotate(-45deg);transform: rotate(-45deg);}
